@@ -1,149 +1,64 @@
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-  }
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
-  /* Simple Responsive Framework. */
-  .row {
-    width: 100%;
-  }
-  
-  /********** Large devices only **********/
-  @media (min-width: 992px) {
-    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-      float: left;
-    }
-    .col-lg-1 {
-      width: 8.33%;
-    }
-    .col-lg-2 {
-      width: 16.66%;
-    }
-    .col-lg-3 {
-      width: 25%;
-    }
-    .col-lg-4 {
-      width: 33.33%;
-    }
-    .col-lg-5 {
-      width: 41.66%;
-    }
-    .col-lg-6 {
-      width: 50%;
-    }
-    .col-lg-7 {
-      width: 58.33%;
-    }
-    .col-lg-8 {
-      width: 66.66%;
-    }
-    .col-lg-9 {
-      width: 74.99%;
-    }
-    .col-lg-10 {
-      width: 83.33%;
-    }
-    .col-lg-11 {
-      width: 91.66%;
-    }
-    .col-lg-12 {
-      width: 100%;
-    }
-  }
-  
-  /********** Medium devices only **********/
-  @media (min-width: 768px) and (max-width: 991px) {
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-      float: left;
-    }
-    .col-md-1 {
-      width: 8.33%;
-    }
-    .col-md-2 {
-      width: 16.66%;
-    }
-    .col-md-3 {
-      width: 25%;
-    }
-    .col-md-4 {
-      width: 33.33%;
-    }
-    .col-md-5 {
-      width: 41.66%;
-    }
-    .col-md-6 {
-      width: 50%;
-    }
-    .col-md-7 {
-      width: 58.33%;
-    }
-    .col-md-8 {
-      width: 66.66%;
-    }
-    .col-md-9 {
-      width: 74.99%;
-    }
-    .col-md-10 {
-      width: 83.33%;
-    }
-    .col-md-11 {
-      width: 91.66%;
-    }
-    .col-md-12 {
-      width: 100%;
-    }
-  }
+input[type=text], input[type=password], input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
 
-  /********** Small devices only **********/
-  @media (max-width: 767px) {
-    .col-sd-1, .col-sd-2, .col-sd-3, .col-sd-4, .col-sd-5, .col-sd-6, .col-sd-7, .col-sd-8, .col-sd-9, .col-sd-10, .col-sd-11, .col-sd-12 {
-      float: left;
-    }
-    .col-sd-1 {
-      width: 8.33%;
-    }
-    .col-sd-2 {
-      width: 16.66%;
-    }
-    .col-sd-3 {
-      width: 25%;
-    }
-    .col-sd-4 {
-      width: 33.33%;
-    }
-    .col-sd-5 {
-      width: 41.66%;
-    }
-    .col-sd-6 {
-      width: 50%;
-    }
-    .col-sd-7 {
-      width: 58.33%;
-    }
-    .col-sd-8 {
-      width: 66.66%;
-    }
-    .col-sd-9 {
-      width: 74.99%;
-    }
-    .col-sd-10 {
-      width: 83.33%;
-    }
-    .col-sd-11 {
-      width: 91.66%;
-    }
-    .col-sd-12 {
-      width: 100%;
-    }
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+.container {
+  padding: 16px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 3% auto 15% auto; 
+  border: 1px solid #888;
+  width: 70%;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
   }
+}
+  
+  
