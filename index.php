@@ -18,6 +18,9 @@
 <head>
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<meta name="description" content="Sign Up Form">
+  	<meta name="author" content="Pushpendra Tripathi">
 </head>
 <body>
 	<div class="header">
